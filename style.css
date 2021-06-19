@@ -1,0 +1,672 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fonu: 'Nunito Sans', sans-serif;
+    --fosans: 'PT Sans', sans-serif;
+    --global-nav-collective-height:0;
+    --global-nav-ad-bar-height:0px;
+}
+html{    
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+body{
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal;
+} 
+main{
+    min-width: 1024px;
+}
+
+#global-nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    min-width: 1024px;
+    height: 48px;
+    max-height: 44px;
+    background: rgba(0,0,0,0.8);
+    font-size: 17px;
+
+}
+.nav-content{
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    z-index: 5;
+}
+.nav-list a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: #f5f5f7;
+    z-index: 1;
+    padding: 0 10px;
+    opacity: .8;
+}
+.nav-list a img{ 
+    width: 15px;
+}
+main{
+    margin-top: 44px;
+}
+.homepage-content{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    padding: 12px 0;
+    background: #ffff;
+}
+.homepage-content span{
+    color: #06c;
+}
+
+.banner-college{
+    background: url(./img/banner-anuncio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+    padding-top: 47px;
+}
+.banner-content{
+    letter-spacing: -.008em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.banner-content h2{
+    font-size: 56px;
+    text-align: center;
+}
+.banner-link{
+    margin-top: 9px;
+}
+
+.banner-link a{
+    font-size: 22px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .08em;
+    text-decoration: none;
+    color: #06c;
+}
+.banner-link::after{
+    content: ">";
+    color: #06c;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.banner-iphone{
+    background: url(./img/iphone_12_colores.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+    padding-top: 70px;
+}
+.iphone-content{
+    letter-spacing: -.008em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.iphone-content h2{
+    font-size: 56px;
+    text-align: center;
+}
+.iphone-content h3{
+    font-size: 28px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin-top: 10px;
+}
+.iphone-content p{
+    text-align: center;
+    font-size: 20px;
+}
+.iphone-content p:first-child{
+    margin-top: 15px;
+}
+.iphone-link{
+    margin-top: 30px;
+}
+.iphone-link a{
+    font-size: 22px;
+    line-height: 0;
+    font-weight: 400;
+    letter-spacing: .08em;
+    text-decoration: none;
+    color: #06c;
+    margin-right: 30px;
+}
+.iphone-link a::after{
+    content: ">";
+    color: #06c;
+    margin-left: 7px;
+    font-weight: 700;
+}
+.banner-iphone-pro{
+    background: url(./img/iphone_12_pro_banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+    padding-top: 70px;
+    color: #fff;
+    margin-top: 10px;
+}
+.iphone-pro-text{
+    letter-spacing: -.008em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.iphone-pro-text h2{
+    font-size: 56px;
+    text-align: center;
+}
+.iphone-pro-text h3{
+    font-size: 28px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin-top: 10px;
+}
+.iphone-pro-text p{
+    text-align: center;
+    font-size: 20px;
+    color: #7f7f7f;
+}
+.iphone-child{
+    margin-top: 15px;
+}
+.iphone-pro-link{
+    margin-top: 30px;
+}
+.iphone-pro-link a{
+    font-size: 22px;
+    line-height: 0;
+    font-weight: 400;
+    letter-spacing: .08em;
+    text-decoration: none;
+    color: #06c;
+    margin-right: 30px;
+}
+.iphone-pro-link a::after{
+    content: ">";
+    color: #06c;
+    margin-left: 7px;
+    font-weight: 700;
+}
+
+/*promos*/
+.home-promos{
+    max-width: 1880px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+}
+.home-promos > div{
+    width: 50%;
+}
+.promo-imac{
+    background:#fff;
+    border-top:84px;
+    color:#1d1d1f;
+    height: 700px;
+}
+.imac-content{
+    letter-spacing: -.008em;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.imac-content h4{
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: 0em;
+}
+.imac-content h5{
+    font-size: 21px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin-top: 10px;
+}
+.imac-link{
+    margin-top: 10px;
+}
+.imac-link a{
+    font-size: 22px;
+    line-height: 0;
+    font-weight: 400;
+    text-decoration: none;
+    color: #06c;
+    margin-right: 15px;
+}
+.imac-link a::after{
+    content: ">";
+    color: #06c;
+    margin-left: 7px;
+    font-weight: 700;
+}
+.promo-imac{
+    background: url(./img/promo_imac.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    padding-top: 70px;
+    color:#1d1d1f;
+}
+.promo-ipad{
+    border-top:84px;
+    color: #f5f5f7;
+    height: 700px;
+}
+.ipad-text{
+    letter-spacing: -.008em;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ipad-text h4{
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: 0em;
+}
+.ipad-text h5{
+    font-size: 22px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin-top: 10px;
+}
+.ipad-link{
+    margin-top: 30px;
+}
+.ipad-link a{
+    font-size: 22px;
+    line-height: 0;
+    font-weight: 400;
+    text-decoration: none;
+    color: #06c;
+    margin-right: 15px;
+}
+.ipad-link a::after{
+    content: ">";
+    color: #06c;
+    margin-left: 7px;
+    font-weight: 700;
+}
+.promo-ipad-pro{
+    background: url(./img/promo_ipad_pro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    padding-top: 70px;
+    color:#1d1d1f;
+}
+
+
+.promo-watch-fitness{
+    margin-top: 10px;
+    display: flex;
+}
+.promo-watch-fitness > div{
+    width: 50%;
+}
+.promo-watch{
+    border-top:84px;
+    color: #f5f5f7;
+    height: 700px;
+}
+.watch-text{
+    letter-spacing: -.008em;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.watch-text h5{
+    font-size: 22px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin-top: 10px;
+    color:#ffff;
+}
+.watch-link{
+    margin-top: 20px;
+}
+.watch-link a{
+     font-size: 22px;
+     line-height: 0;
+     font-weight: 400;
+     text-decoration: none;
+    color: #06c;
+    margin-right: 15px;
+}
+.watch-link a::after{
+    content: ">";
+    color: #06c;
+    margin-left: 7px;
+    font-weight: 700;
+}
+.promo-watch{
+    background: url(./img/promo_watch_series.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    padding-top: 70px;
+    color:#1d1d1f;
+}
+
+.promo-fitness{
+    border-top:84px;
+    color: #f5f5f7;
+    height: 700px;
+}
+.fitness-text{
+    letter-spacing: -.008em;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.fitness-text h6{
+    font-size: 22px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin-top: 10px;
+    color:#1d1d1f;
+}
+.fitness-link{
+    margin-top: 20px;
+}
+.fitness-link a{
+    font-size: 22px;
+     line-height: 0;
+     font-weight: 400;
+     text-decoration: none;
+    color: #06c;
+    margin-right: 15px;
+}
+.fitness-link a::after{
+    content: ">";
+    color: #06c;
+    margin-left: 7px;
+    font-weight: 700;
+}
+.promo-fitness{
+    background: url(./img/promo_fitness.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    padding-top: 70px;
+    color:#1d1d1f;
+}
+
+
+
+.promo-card-physical{
+    margin-top: 10px;
+    display: flex;
+}
+.promo-card-physical > div{
+    width: 50%;
+}
+.promo-card{
+    background:#fff;
+    border-top:84px;
+    color:#1d1d1f;
+    height: 700px;
+}
+.card-text{
+    letter-spacing: -.008em;
+    max-width: 290px;
+    margin: 0 auto;
+    text-align: center;
+}
+.card-text h5{
+    
+    font-size: 21px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin-top: 10px;
+}
+.card-link{
+    margin-top: 30px;
+}
+.card-link a{
+    font-size: 18px;
+    line-height: 0;
+    font-weight: 400;
+    text-decoration: none;
+    color: #06c;
+    margin-right: 15px;
+}
+.card-link a::after{
+    content: ">";
+    color: #06c;
+    margin-left: 7px;
+    font-weight: 700;
+}
+.promo-card{
+    background: url(./img/promo_card.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    padding-top: 70px;
+    color:#1d1d1f;
+}
+.promo-physical{
+    border-top:84px;
+    color: #f5f5f7;
+    height: 700px;
+}
+.physical-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    color:#ffff;
+}
+.physical-text{
+    letter-spacing: -.008em;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.physical-link h6{
+    font-size: 22px;
+    line-height: 1.10722;
+    font-weight: 100;
+    letter-spacing: .004em;
+    margin-top: 10px;
+}
+.physical-link{
+    margin-top: 30px;
+}
+.physical-link a{
+    font-size: 18px;
+    line-height: 0;
+    font-weight: 400;
+    text-decoration: none;
+    color:#fff;
+    margin-right: 15px;
+}
+.physical-link a::after{
+    content: ">";
+    color: #fff;
+    margin-left: 7px;
+    font-weight: 700;
+}
+.promo-physical{
+    background: url(./img/promo_fitnes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    padding-top: 70px;
+    color:#1d1d1f;
+}
+footer{
+    margin-top: 10px;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    min-width: 1024px;
+}
+.footer-content{
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    color: #1d1d1f;
+}
+.footer-information{
+    border-bottom: 1px solid #d2d2d7;
+    color: #86868b;
+    padding: 17px 0 11px;
+}
+.footer-information ul {
+    list-style: none;
+}
+.footer-information ul li{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.nav-directory{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.directory-column{
+    flex-basis: 25%;
+    color: #86868b;
+}
+.directory-column h3{
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    margin-bottom: .8em;
+    color: #676769;
+}
+.directory-column ul{
+    list-style: none;
+}
+.directory-column ul li{
+    margin-bottom: .8em;
+}
+.directory-column ul li a{
+    color: #515154;
+    text-decoration: none;
+    font-size: 12px;
+}
+input {
+    display: none;
+  }
+  label{
+      display: none;
+  }
+
+  @media (max-width: 980px){
+   
+    .home-promos{
+        flex-direction: column;
+    }
+    .promo-imac{
+        min-width: 100%;
+    }
+    .promo-ipad-pro{
+        min-width: 100%;
+    }
+    .promo-watch-fitness{
+        flex-direction: column;
+    }
+    .promo-watch{
+        min-width: 100%;
+    }
+    .promo-fitness{
+        min-width: 100%;
+    }
+    .promo-card{
+        min-width: 100%;
+    }
+    .promo-card-physical{
+        flex-direction: column;
+    }
+    .promo-physical{
+        min-width: 100%;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-content{
+        width: 99vw;
+    }
+    input:checked  ~ .nav-list{
+        display:block;
+        background: black;
+        width: 100%;
+        height: 100vh;
+        background-position: left center;
+        padding: 50px;
+      }
+    input:checked  ~ .nav-list li {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 30px;
+        line-height: 50px;
+        border-bottom: 2px solid rgb(153, 151, 151);
+    }
+    input:checked  ~ .nav-list li a{
+        font-size: 24px;
+        padding: 20 0px;
+    }
+     label{
+        display: block;
+        color: rgb(153, 151, 151);
+        margin-top: 10px;
+     }
+
+}
+ 
